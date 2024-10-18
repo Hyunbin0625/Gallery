@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head>
+    <title> 폼 만들기_설문조사 </title>
+    <link rel="stylesheet" href="css/style_poll.css">
+</head>
+<body>
+    <div class="wrap">
+        <header>
+            <div class="bg">
+                <h1 class="h1txt">설문조사</h1>
+            </div>
+        </header>
+        
+
+        <main>
+            <form name="설문" action="">
+                <fieldset>
+                    <label for="">이 &nbsp; 름 : </label>
+                    <input type=“text” size=20 id="username" placeholder="홍길동"  name="">
+
+                    &nbsp;&nbsp; <label for="">성 &nbsp; 별 : </label>
+                    <input type=radio name=sex value=male> 남&nbsp;&nbsp; <input type=radio name=sex value=female> 여<br>
+
+                    <label for="">생년월일 : </label>
+                    <input type=“text” size=18 id="age" placeholder="6자리"  name=""><br>
+
+                    <label for="">이메일 : </label>
+                    <input type=email placeholder=user@example.com required><br>
+
+                    <label for="">주 &nbsp; 소 : </label>
+                    <input type=“text” size=72> <br><br>
+
+                    <label for="">1. 웹사이트를 사용하면서 개선이 필요하다고 느낀 점은?</label><br>
+                    <input type=checkbox name=hobby1 value=v1> 디자인 개선 <br>
+                    <input type=checkbox name=hobby2 value=v2> 콘텐츠 품질 향상 <br>
+                    <input type=checkbox name=hobby3 value=v3> 페이지 로딩 속도 <br>
+                    <input type=checkbox name=hobby4 value=v4> 탐색 구조 개선 <br>
+                    <input type=checkbox name=hobby5 value=v5> 기타 <br><br>
+                    <!-- 여러 항목을 복수 선택할 수 있기 때문에 구분을 위해 name 속성값을 다 다르게 만들어야 함 -->
+
+                    <label for="">2. 웹사이트의 디자인</label><br>
+                    <input type=radio name=alcohol value=v1> 매우 만족 <br>
+                    <input type=radio name=alcohol value=v2> 만족 <br>
+                    <input type=radio name=alcohol value=v3> 보통 <br>
+                    <input type=radio name=alcohol value=v4> 불만족 <br>
+                    <input type=radio name=alcohol value=v5> 매우 불만족 <br><br> <!-- 여러 항목중 하나의 항목만 선택할 수 있기 때문에 같은 그룹 끼리는 동일한 name 속성값 사용해야 함 -->
+
+                    <label for="">3. 웹사이트에서 가장 마음에 들었던 점은?</label>
+                    <select name="hobby" size=1>
+                        <option selected>디자인</option>
+                        <option>콘텐츠</option>
+                        <option>인터페이스</option>
+                        <option>로딩 속도</option>
+                        <option>기타</option>
+                        <option >없음</option>
+                    </select><br><br>
+
+                    <label for="">4. 작품의 분위기에 대한 선호하는 스타일은?</label><br>
+                    <select name="interest" size=6 multiple>
+                        <option value="1" selected>밝고 긍정적인 작품</option>
+                        <option value="2">어두운 분위기의 작품</option>
+                        <option value="3">감성적이고 서정적인 작품</option>
+                        <option value="4">혁신적이고 실험적인 작품</option>
+                        <option value="5">전통적인 요소를 담은 작품</option>
+                        <option value="6">기타</option>
+                        <option value="7">모르겠음</option>
+                    </select><br><br>
+
+                    <label for="">5. 마지막으로 방문한 전시회 날짜</label>
+                    <input type="date"><br><br>
+
+                    <label for="">6. 바라는 점</label><br>
+                    <textarea name="introduction" cols=90 rows=8></textarea><br>
+
+                    <input type=submit value="완료" class="btn" > <!-- submit를 만든 이미지로 할때 <input type="image" src="/assets/img/form_and_input/img_btn_submit.png">-->
+                    <input type=reset value="다시" class="btn" > 
+                </fieldset>
+            </form>
+        </main>
+    </div>
+</body>
+</html>

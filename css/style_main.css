@@ -1,0 +1,939 @@
+@font-face {
+    font-family: 'GeekbleMalang2';
+    src: url('../font/GeekbleMalang2TTF.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'HancomSans';
+    src: url('../font/HancomSans-SemiBold_0.ttf') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: '나눔고딕', Arial, Helvetica, sans-serif;
+    color: #666;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+    /* Backgroud */
+    .bg {
+        width: 100%;
+        height: 900px;
+        background-image: url('../img/IMG_0003.jpg');
+        background-size: auto 240%;
+        background-position: 50% 20%;
+        background-repeat: no-repeat;
+        margin-bottom: 50px;
+    }
+
+    .h1txt {
+        font-family: 'GeekbleMalang2', Arial, Helvetica, sans-serif;
+        color: #e7e7e7;
+        font-size:  90px;
+        text-align: center;
+        line-height: 290px;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.37);
+        letter-spacing: 25px;
+        font-weight: 500;
+    }
+
+    /* THE LATEST */
+    .latest-section {
+        width: 1400px;
+        margin: 80px auto;
+    }
+
+    .latest-header {
+        font-size: 55px;
+        font-weight: bold;
+        color: #000;
+        margin-bottom: 40px;
+        letter-spacing: 3px; 
+    }
+
+    .latest-content {
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+        width: 100%;
+    }
+
+    .latest-item {
+        width: 32%;
+        padding: 0;
+        background: #fff;
+        text-align: left;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .latest-item img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+        transform: scale(1.05);  /* 이미지 확대 */
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .latest-item img:hover {
+        transform: scale(1.07);
+    }
+
+    .latest-title {
+        font-size: 20px;
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    .latest-description {
+        font-size: 14px;
+        color: #888;
+    }
+
+    /* Large Featured Img */
+    .large-featured-section {
+        width: 100%;
+        height: auto;
+        padding-bottom: 80px;
+        margin: 80px auto;
+        text-align: center;
+        background-color: #ececec;
+        margin-bottom: 40px;
+    }
+    
+    .large-featured-image {
+        margin-bottom: 60px;
+    }
+    
+    .large-featured-img {
+        padding-top: 30px;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+    
+    .large-featured-text {
+        /* font-family: 'HancomSans', Arial, Helvetica, sans-serif; */
+        font-size: 100px;
+        font-weight: bold;
+        background-color: #ececec;
+    }
+
+    .wrap {
+        width: 1400px;
+        margin: auto;
+    }
+
+    /* Module Grid Section */
+    .module-grid_1 {
+        margin-bottom: 15px;
+        width: 100%;
+        height: 743px;
+        display: flex;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-grid_2 {
+        margin-bottom: 15px;
+        height: 364px;
+        display: flex;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module_1 {
+        display: flex;
+        width: 849px;
+    }
+    
+    .module_1-1 {
+        margin-right: 15px;
+        margin-top: 379px;
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .module_1-2 {
+        margin-right: 15px;
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .module_1-3 {
+        margin-right: 15px;
+        margin-top: 379px;
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+
+    }
+
+    .module-img_1-1 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.22);  /* 이미지 확대 */
+    }
+
+    .module-img_1-2 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.15);  /* 이미지 확대 */
+    }
+
+    .module-content_1-3 {
+        width: 268px;
+        height: 364px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .module-img_1-3 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.1);  /* 이미지 확대 */
+    }
+
+    .module-text_1-3 {
+        text-align: end;
+        margin-top: -61px;
+        margin-bottom: 41px;
+        margin-right: -2px;
+        font-size: 85px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .module_2 {
+        /* background-color: #ececec; */
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-img_2 {
+        width: 551px;
+        height: 743px;
+        object-fit: cover;
+        transform: scale(1.08);  /* 이미지 확대 */
+    }
+
+    .module_3 {
+        /* background-color: #ececec; */
+        margin-right: 15px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-img_3 {
+        width: 551px;
+        height: 743px;
+        object-fit: cover;
+        transform: scale(1.08);  /* 이미지 확대 */
+    }
+
+    .module-text_3 {
+        margin-top: 25px;
+        margin-left: -3px;
+        font-size: 90px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .module_4 {
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+        margin-left: 155px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .module-img_4 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.11);  /* 이미지 확대 */
+    }
+
+    .module_5 {
+        margin-right: 15px;
+    }
+
+    .module-content_5 {
+        width: 268px;
+        height: 364px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .module-img_5 {
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.15);  /* 이미지 확대 */
+    }
+
+    .module-text_5 {
+        margin-top: 39px;
+        margin-left: -10px;
+        font-size: 90px;
+        font-weight: bold;
+        color: #000;
+    }
+
+    .module_6 {
+        /* background-color: #ececec; */
+        width: 1000px;
+        margin-right: 15px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-img_6 {
+        width: 551px;
+        height: 743px;
+        object-fit: cover;
+        transform: scale(1.1);  /* 이미지 확대 */
+    }
+
+    .module_7 {
+        display: flex;
+    }
+
+    .module_7-1 {
+        /* background-color: #ececec; */
+        margin-right: 15px;
+        margin-top: 379px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    /* .module_7-2 {
+    } */
+
+    .module-content_7-2 {
+        /* background-color: #ececec; */
+        width: 268px;
+        height: 364px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-img_7-1 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.12);  /* 이미지 확대 */
+    }
+
+    .module-img_7-2 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.1);  /* 이미지 확대 */
+    }
+
+    .module-text_7-2 {
+        margin-top: 3px;
+        margin-left: 21px;
+        font-size: 90px;
+        font-weight: bold;
+        color: #000;
+        writing-mode: vertical-rl; /* 텍스트를 세로로 배치 */
+        text-orientation: upright; /* 텍스트가 올바르게 세로로 보이도록 설정 */
+    }
+
+    .module_8 {
+        display: flex;
+        margin-bottom: 40px;
+    }
+
+    .module_8-1, .module_8-2 {
+        /* background-color: #ececec; */
+        margin-right: 15px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module_8-3 {
+        /* background-color: #ececec; */
+        margin-left: 283px;
+        margin-right: 15px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module_8-4 {
+        /* background-color: #ececec; */
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .module-img_8-1 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.3);  /* 이미지 확대 */
+    }
+
+    .module-img_8-2 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.25);  /* 이미지 확대 */
+    }
+    
+    .module-img_8-3 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.23);  /* 이미지 확대 */
+    }
+    
+    .module-img_8-4 {
+        width: 268px;
+        height: 364px;
+        object-fit: cover;
+        transform: scale(1.2);  /* 이미지 확대 */
+    }
+
+    /* hierarchical Grid Section */
+    .hierarchical-grid {
+        width: 100%;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+        background-color: #ececec;
+        margin-bottom: 40px;
+    }
+
+    .hierarchical_1 {
+        display: flex;
+        width: 100%;
+        height: 526px;
+    }
+
+    .hierarchical_1-1 {
+        width: 50%;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .hierarchical-img_1-1 {
+        width: 700px;
+        height: 526px;
+        object-fit: cover;
+        transform: scale(1.1);  /* 이미지 확대 */
+    }
+
+    .hierarchical_text_1-1 {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hierarchical-title_1-1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .hierarchical-description_1-1 {
+        font-size: 20px;
+        color: #888;
+    }
+
+    .hierarchical_2 {
+        display: flex;
+        width: 100%;
+        height: 526px;
+    }
+    
+    .hierarchical_text_2-1 {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .hierarchical-title_2-1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+    
+    .hierarchical-description_2-1 {
+        font-size: 20px;
+        color: #888;
+    }
+    
+    .hierarchical_2-1 {
+        width: 50%;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+    
+    .hierarchical-img_2-1 {
+        width: 700px;
+        height: 526px;
+        object-fit: cover;
+        transform: scale(1.0);  /* 이미지 확대 */
+    }
+
+    .hierarchical_3 {
+        width: 100%;
+        height: 500px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .hierarchical-img_3 {
+        width: 1400px;
+        height: 500px;
+        object-fit: cover;
+        transform: scale(1.05);  /* 이미지 확대 */
+    }
+
+    .hierarchical_4 {
+        display: flex;
+        width: 100%;
+        height: 855px;
+    }
+
+    .hierarchical_4-1 {
+        width: 50%;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .hierarchical-img_4-1 {
+        width: 700px;
+        height: 855px;
+        object-fit: cover;
+        transform: scale(1.0);  /* 이미지 확대 */
+    }
+
+    .hierarchical_text_4-1 {
+        width: 50%;
+        height: 100%;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .hierarchical-title_4-1 {
+        font-size: 55px;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    .hierarchical-description_4-1 {
+        font-size: 20px;
+        color: #888;
+    }
+
+    .hierarchical_5 {
+        background-color: #f5f5f5;
+        width: 100%;
+        height: 900px;
+    }
+
+    .hierarchical_5-1 {
+        width: 900px;
+        height: 604px;
+        margin-left: 250px;
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+    }
+
+    .hierarchical-img_5-1 {
+        width: 900px;
+        height: 604px;
+        object-fit: cover;
+        transform: scale(1.0);  /* 이미지 확대 */
+    }
+
+    .hierarchical_text_5-1 {
+        background-color: #ececec;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .hierarchical-title_5-1 {
+        font-size: 55px;
+        font-weight: bold;
+        padding-top: 110px;
+        margin-bottom: 35px;
+    }
+
+    .hierarchical-description_5-1 {
+        font-size: 20px;
+        color: #888;
+    }
+
+
+    /* horizontal-carousel-section */
+    /*초기화 코드*/
+    .slide {
+        /* layout */
+        display: flex;
+        flex-wrap: nowrap;
+        /* 컨테이너의 내용물이 컨테이너 크기(width, height)를 넘어설 때 보이지 않도록 하기 위해 hidden을 준다. */
+        overflow: hidden;
+
+        /* position */
+        /* slide_button의 position absolute가 컨테이너 안쪽에서 top, left, right offset이 적용될 수 있도록 relative를 준다. (기본값이 static인데, static인 경우 그 상위 컨테이너로 나가면서 현재 코드에선 html을 기준으로 offset을 적용시키기 때문) */
+        position: relative;
+
+        /* size */
+        width: 100%;
+
+        /* slide drag를 위해 DOM요소가 드래그로 선택되는것을 방지 */
+        user-select: none;
+        margin-bottom: 40px;
+    }
+
+    .slide_item {
+        /* layout */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    
+        /* position - 버튼 클릭시 left offset값을 적용시키기 위해 */
+        position: relative;
+        left: 0px;
+    
+        /* size */
+        width: 100%;
+        height: 852px;
+        /* flex item의 flex-shrink는 기본값이 1이므로 컨테이너 크기에 맞게 줄어드는데, 슬라이드를 구현할 것이므로 줄어들지 않도록 0을 준다. */
+        flex-shrink: 0;
+    
+        /* transition */
+        transition: left 0.9s;
+    }
+
+    .slide-img {
+        width: 600px;
+        height: 852px;
+    }
+
+    /* 슬라이드 이미지 설정 */
+    .slide-img_1 {
+        width: 600px;
+        height: 852px;
+        object-fit: cover;
+        display: block; /* 이미지 블록 요소로 설정 */
+        transform: scale(0.92);  /* 이미지 확대 */
+
+    }
+    .slide-img_2 {
+        width: 600px;
+        height: 852px;
+        object-fit: cover;
+        display: block; /* 이미지 블록 요소로 설정 */
+        transform: scale(1.0);  /* 이미지 확대 */
+    }
+    .slide-img_3 {
+        width: 600px;
+        height: 852px;
+        margin-top: -5px;
+        object-fit: cover;
+        display: block; /* 이미지 블록 요소로 설정 */
+        transform: scale(0.85);  /* 이미지 확대 */
+    }
+    .slide-img_4 {
+        width: 600px;
+        height: 852px;
+        margin-top: -5px;
+        object-fit: cover;
+        display: block; /* 이미지 블록 요소로 설정 */
+        transform: scale(0.87);  /* 이미지 확대 */
+    }
+    .slide-img_5 {
+        width: 600px;
+        height: 852px;
+        object-fit: cover;
+        display: block; /* 이미지 블록 요소로 설정 */
+        transform: scale(0.87);  /* 이미지 확대 */
+    }
+
+    .slide_button {
+        /* layout */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* position */
+        position: absolute;
+        /* 버튼이 중앙에 위치하게 하기위해 계산 */
+        top: calc(50% - 16px);
+
+        /* size */
+        width: 32px;
+        height: 32px;
+
+        /* style */
+        border-radius: 100%;
+        background-color: #ffffff88;
+        cursor: pointer;
+    }
+
+    .slide_button:hover {
+        /* layout */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        /* position */
+        position: absolute;
+        /* 버튼이 중앙에 위치하게 하기위해 계산 */
+        top: calc(50% - 16px);
+
+        /* size */
+        width: 32px;
+        height: 32px;
+
+        /* style */
+        border-radius: 100%;
+        background-color: #fff;
+        cursor: pointer;
+    }
+  
+    .slide_prev_button {
+        left: 10px;
+    }
+    .slide_next_button {
+        right: 10px;
+    }
+
+    /* 각 슬라이드가 변경되는 것을 시각적으로 확인하기 쉽도록 각 슬라이드별 색상 적용 */
+    .slide_item.item1 {
+        background-color: #ad2730;
+    }
+    .slide_item.item2 {
+        background-color: #c3c482;
+    }
+    .slide_item.item3 {
+        background-color: #564320;
+    }
+    .slide_item.item4 {
+        background-color: #fbf5de;
+    }
+    .slide_item.item5 {
+        background-color: #96c6df;
+    }
+
+    /* 페이지네이션 스타일 */
+    ul,
+    li {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    .slide_pagination {
+        /* layout */
+        display: flex;
+        gap: 5px;   
+        /* position */
+        position: absolute;
+        bottom: 0;
+        /* left:50%, translateX(-50%)를 하면 가로 가운데로 위치시킬 수 있다. */
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .slide_pagination > li {
+        /* 현재 슬라이드가 아닌 것은 투명도 부여 */
+        color: #ffffff88;
+        cursor: pointer;
+        font-size: 25px;
+    }
+    .slide_pagination > li.active {
+        /* 현재 슬라이드 색상은 투명도 없이 */
+        color: #ffffff;
+    }
+  
+    .slide_item_duplicate {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left: 0px;
+        width: 100%;
+        height: 300px;
+        flex-shrink: 0;
+        transition: left 0.9s;
+    }
+
+
+
+h2 {
+    margin-bottom: 18px;
+}
+
+h3 {
+    margin-bottom: 12px;
+}
+
+li {
+    margin-left: 30px;
+}
+
+#ex1, #ex2, #ex3 {
+    margin-bottom: 10px;
+}
+
+
+
+a {
+    color: #3a3029;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: rgb(60, 0, 201);
+}
+
+span {
+    margin-right: 30px;
+}
+
+hr {
+    margin-top: 25px;
+    margin-bottom: 13px;
+}
+
+#txt1, #txt2, #txt3 {
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 750px;
+    border-collapse: collapse;
+    font-family: Arial, sans-serif;
+    margin: 20px 0;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #2e2e2e41;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+
+/* footer */
+footer {
+    background-color: #ececec;
+    width: 100%;
+    height: 600px;
+}
+
+    .foot_wrap {
+        width: 1400px;
+        margin: auto;
+    }
+
+    .footnote_wrap {
+        width: 1400px;
+        display: flex;
+    }
+    
+    .footnote {
+        width: 100%;
+    }
+    
+    .btn_wrap {
+        width: 30%;
+    }
+    
+    .btn {
+        text-align: end;
+    }
+
+    .btn a {
+        width: 150px;
+        height: 35px;
+        background-color: #666;
+        color: #fff;
+        display: inline-block;
+        text-align: center;
+        line-height: 35px;
+    }
+
+    .btn a:hover {
+        background-color: #ececec;
+        color: #666;
+    }
+
+    .top {
+        position: fixed;
+        bottom: 3vh;    /* 5프로 만큼, v : view, h : height */
+        right: 4vw;    /* 10프로 만큼, v : view, w : width */
+    }
+
+
+    .footbottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .footer-links-bottom {
+        list-style: none;
+        padding: 0;
+        margin: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .footer-links-bottom li a {
+        text-decoration: none;
+        color: #333;
+    }
+
+    .footer-links-bottom li a:hover {
+        text-decoration: underline;
+    }
+
+    .footbottom p {
+        margin: 10px 0;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .footer-instagram-icon {
+        width: 24px;
+        height: 24px;
+        margin-top: 0px;
+        margin-left: auto;
+    }
+
+    .footer-instagram-id {
+        margin-left: 2px;
+        font-size: 15px;
+        color: #333;
+    }
