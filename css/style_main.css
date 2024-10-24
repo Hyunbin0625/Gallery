@@ -76,6 +76,13 @@ body {
         text-align: left;
         overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
     }
+    
+    .latest-item-img{
+        overflow: hidden;  /* 이미지가 아이템 밖으로 나가면 잘리도록 설정 */
+        margin-top: 17px;
+        width: 100%;
+        height: auto;
+    }
 
     .latest-item img {
         width: 100%;
@@ -212,8 +219,8 @@ body {
 
     .module-text_1-3 {
         text-align: end;
-        margin-top: -61px;
-        margin-bottom: 41px;
+        margin-top: -69px;
+        margin-bottom: 50px;
         margin-right: -2px;
         font-size: 85px;
         font-weight: bold;
@@ -344,8 +351,8 @@ body {
     }
 
     .module-text_7-2 {
-        margin-top: 3px;
-        margin-left: 21px;
+        margin-top: -3px;
+        margin-left: 26px;
         font-size: 90px;
         font-weight: bold;
         color: #000;
@@ -772,8 +779,6 @@ body {
         transition: left 0.9s;
     }
 
-
-
 h2 {
     margin-bottom: 18px;
 }
@@ -789,8 +794,6 @@ li {
 #ex1, #ex2, #ex3 {
     margin-bottom: 10px;
 }
-
-
 
 a {
     color: #3a3029;
@@ -808,6 +811,7 @@ span {
 }
 
 hr {
+    border: 1px solid #666;
     margin-top: 25px;
     margin-bottom: 13px;
 }
