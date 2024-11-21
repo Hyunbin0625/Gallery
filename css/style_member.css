@@ -37,7 +37,6 @@ header{
         font-weight: 500;
     }
 
-
     .container{
         width: 600px;
         height: auto; /* 자식 컨텐츠 사이즈에 맞춤*/
@@ -89,7 +88,6 @@ header h2{
     text-align: center;
     line-height: 80px;
 }
-
 
 /* BTN */
 .btn{
